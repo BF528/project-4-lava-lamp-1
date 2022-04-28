@@ -1,0 +1,22 @@
+{
+    "read_files": "[ [ /projectnb/bf528/project_4_scrnaseq/fastq/SRR3879604/SRR3879604_1_bc.fastq.gz, /projectnb/bf528/project_4_scrnaseq/fastq/SRR3879604/SRR3879604_2.fastq.gz], [ /projectnb/bf528/project_4_scrnaseq/fastq/SRR3879605/SRR3879605_1_bc.fastq.gz, /projectnb/bf528/project_4_scrnaseq/fastq/SRR3879605/SRR3879605_2.fastq.gz], [ /projectnb/bf528/project_4_scrnaseq/fastq/SRR3879606/SRR3879606_1_bc.fastq.gz, /projectnb/bf528/project_4_scrnaseq/fastq/SRR3879606/SRR3879606_2.fastq.gz] ]",
+    "expected_format": "ISR",
+    "compatible_fragment_ratio": 1.0,
+    "num_compatible_fragments": 355626832,
+    "num_assigned_fragments": 355626832,
+    "num_frags_with_concordant_consistent_mappings": 0,
+    "num_frags_with_inconsistent_or_orphan_mappings": 1204554635,
+    "strand_mapping_bias": 0.0,
+    "MSF": 0,
+    "OSF": 0,
+    "ISF": 0,
+    "MSR": 0,
+    "OSR": 0,
+    "ISR": 0,
+    "SF": 0,
+    "SR": 0,
+    "MU": 0,
+    "OU": 0,
+    "IU": 0,
+    "U": 0
+}

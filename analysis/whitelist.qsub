@@ -1,0 +1,13 @@
+#!/bin/bash -l
+
+#$ -cwd
+#$ -P bf528
+#$ -j y
+#$ -l h_rt=12:00:00
+#$ -o /usr4/bf527/lkzhang/joblogs
+#$ -N whitelist604
+
+zcat /projectnb/bf528/project_4_scrnaseq/fastq/SRR3879604/SRR3879604_1_bc.fastq.gz | countbarcodes.py 604.pkl
+
+
+

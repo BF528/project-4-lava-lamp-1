@@ -1,0 +1,20 @@
+#!/bin/bash -l
+
+#$ -cwd
+#$ -P bf528
+#$ -j y
+#$ -pe mpi_16_tasks_per_node 16
+#$ -l h_rt=12:00:00
+#$ -o /usr4/bf527/lkzhang/joblogs
+#$ -N salmonalevin
+
+sampledir='/projectnb/bf528/project_4_scrnaseq/fastq'
+refs='/usr4/bf527/lkzhang/lavalamp/project-4-lava-lamp-1/samples'
+
+echo ${sampledir}
+echo $refs
+
+module load salmon 
+salmon alevin -l ISR -1 $sampledir/SRR3879604/SRR3879604_1_bc.fastq.gz $sampledir/SRR3879605/SRR3879605_1_bc.fastq.gz $sampledir/SRR3879606/SRR3879606_1_bc.fastq.gz -2 $sampledir/SRR3879604/SRR3879604_2.fastq.gz $sampledir/SRR3879605/SRR3879605_2.fastq.gz $sampledir/SRR3879606/SRR3879606_2.fastq.gz --index $refs/s_index -p 16 -o 604out --tgMap $refs/map.tsv --whitelist $refs/whitelist.txt --end 5 --barcodeLength 19 --umiLength 6 
+
+

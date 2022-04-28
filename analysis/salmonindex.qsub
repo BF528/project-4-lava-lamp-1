@@ -1,0 +1,16 @@
+#!/bin/bash -l
+
+#$ -cwd
+#$ -P bf528
+#$ -j y
+#$ -pe mpi_16_tasks_per_node 16
+#$ -l h_rt=12:00:00
+#$ -o /usr4/bf527/lkzhang/joblogs
+#$ -N salmonindex
+
+module load salmon 
+
+salmon index -i /usr4/bf527/lkzhang/lavalamp/project-4-lava-lamp-1/samples/s_index -t /usr4/bf527/lkzhang/lavalamp/project-4-lava-lamp-1/samples/gencode.v40.pc_transcripts.fa.gz --gencode --threads 16 
+
+
+
