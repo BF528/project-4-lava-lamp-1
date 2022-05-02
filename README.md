@@ -11,6 +11,7 @@ Luke Zhang, Benyu Zhou, Sri Veerisetti and Mano Ranaweera
 2. filter.py: Filters barcodes by read count threshold 
 3. salmonindex.qsub: Creates Salmon Index
 4. salvein.qsub: Runs Salmon Alvein
-5. Analyst.R: Labeling clusters and identifying marker genes for each cluster
-6. Biologist.R: Filter cluster .csv files via wo criteria: p_val_adj < 0.05 and avg_log2FC > 0 and perform DAVID analysis 
+5. programmer.R: Read the Alevin matrix into Seurat and filter out low quality cells. Cells are clustered based on PCA result of high variance features.
+6. Analyst.R: Labeling clusters and identifying marker genes for each cluster
+7. Biologist.R: Filter cluster .csv files via wo criteria: p_val_adj < 0.05 and avg_log2FC > 0 and perform DAVID analysis 
 
