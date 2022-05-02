@@ -1,10 +1,10 @@
 # Project Description
 
-A brief description of what this repository is for and what it contains
+This project seeks to replicate the primary findings of the paper “A Single-Cell Transcriptomic Map of the Human and Mouse Pancreas Reveals Inter- and Intra-Cell Population Structure.” by Barom M. et al by using sequencing data from a single human donor in order to perform cell-by-gene quantification and quality control on UMI counts as well as identify clusters marker genes for distinct cell type populations.
 
 # Contributors
 
-List contributor names and github user names, or email addresses if desired
+Luke Zhang, Benyu Zhou, Sri Veerisetti and Mano Ranaweera
 
 # Repository Contents
 
