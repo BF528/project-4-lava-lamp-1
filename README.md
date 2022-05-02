@@ -9,3 +9,5 @@ Luke Zhang, Benyu Zhou, Sri Veerisetti and Mano Ranaweera
 # Repository Contents
 
 Provide a brief description of each script/code file in this repo, what it does, and how to execute it
+
+Biologist- In this section, the goal was to utilize the marker genes obtained through the unbiased clustering process in order to confirm the cell type and function of the different clusters. The cluster .csv files were filtered via two criteria: p_val_adj < 0.05 and avg_log2FC > 0 and saved as another file. This was done to all clusters. The new files were saved for DAVID analysis. 
